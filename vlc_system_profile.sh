@@ -1,7 +1,5 @@
-
 ---
-
-## 🧠 Best Linux package name for VLC
+## Linux package name for VLC
 Depending on distro:
 - Ubuntu/Debian: `vlc`
 - Fedora/RHEL: `vlc`
@@ -10,17 +8,15 @@ Use `vlc` in script.
 
 ---
 
-## 📜 Akruti’s 5 Shell Scripts (VLC version)
-
-### **Script 1 — System Identity Report (Akruti)**
+### **Script 1 — System Identity Report **
 ```bash
 #!/bin/bash
 # Script 1: System Identity Report
-# Author: Akruti Chopra | Course: Open Source Software
+# Author: Akruti Rajiv Chopra | Course: Open Source Software
 # Project Software: VLC Media Player
 
 # --- Variables ---
-STUDENT_NAME="Akruti Chopra"
+STUDENT_NAME="Akruti Rajiv Chopra"
 SOFTWARE_CHOICE="VLC Media Player"
 
 # --- System Info ---
