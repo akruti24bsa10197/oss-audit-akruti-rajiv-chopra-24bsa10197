@@ -2,7 +2,7 @@
 # Script 5: Open Source Manifesto Generator
 # Author: Akruti Rajiv Chopra
 # This script asks the user questions and generates a manifesto file.
-# Alias idea (example): alias runmanifest='./script5_manifesto_generator.sh'
+# Alias idea (example): alias runmanifest='./freedom_manifesto_builder.sh'
 
 echo "Answer three questions to generate your open source manifesto."
 echo ""
