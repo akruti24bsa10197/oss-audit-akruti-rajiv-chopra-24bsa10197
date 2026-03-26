@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script 3: Disk and Permission Auditor
-# Author: Akruti Chopra
+# Author: Akruti Rajiv Chopra
 # Audits important Linux directories and checks VLC config directory
 
 DIRS=("/etc" "/var/log" "/home" "/usr/bin" "/tmp")
