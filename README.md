@@ -10,11 +10,13 @@
 VLC Media Player is a free and open-source multimedia player developed by the VideoLAN project. It is known for supporting a wide range of audio and video formats without requiring additional codecs.
 
 ## Repository Contents
-- script1_system_identity.sh
-- script2_package_inspector.sh
-- script3_disk_permission_auditor.sh
-- script4_log_analyzer.sh
-- script5_manifesto_generator.sh
+
+- vlc_system_profile.sh
+- vlc_package_audit.sh
+- storage_permission_scan.sh
+- keyword_log_tracker.sh
+- freedom_manifesto_builder.sh
+- README.md
 
 ## Script Descriptions
 
