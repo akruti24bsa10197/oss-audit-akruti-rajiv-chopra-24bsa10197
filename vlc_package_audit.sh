@@ -1,39 +1,42 @@
 #!/bin/bash
-# Script 2: FOSS Package Inspector
+# VLC Package Audit Script
 # Author: Akruti Rajiv Chopra
-# Checks whether VLC is installed and prints package details
+# Course Project: Open Source Software Audit
 
+# Store the package name for VLC
 PACKAGE="vlc"
 
-echo "=============================================="
-echo " FOSS Package Inspector - VLC Media Player"
-echo "=============================================="
+# Display heading
+echo "=================================================="
+echo "           VLC Open Source Package Audit"
+echo "=================================================="
 
-# Check package using dpkg first, then rpm
+# Check package details using dpkg or rpm
 if command -v dpkg >/dev/null 2>&1; then
     if dpkg -s "$PACKAGE" >/dev/null 2>&1; then
-        echo "$PACKAGE is installed."
+        echo "$PACKAGE is installed on this system."
         dpkg -s "$PACKAGE" | grep -E 'Package:|Version:|Maintainer:|Description:'
     else
         echo "$PACKAGE is NOT installed."
     fi
 elif command -v rpm >/dev/null 2>&1; then
     if rpm -q "$PACKAGE" >/dev/null 2>&1; then
-        echo "$PACKAGE is installed."
+        echo "$PACKAGE is installed on this system."
         rpm -qi "$PACKAGE" | grep -E 'Name|Version|License|Summary'
     else
         echo "$PACKAGE is NOT installed."
     fi
 else
-    echo "No supported package manager found (dpkg/rpm)."
+    echo "No supported package manager found (dpkg or rpm)."
 fi
 
+# Add a short open-source note using case statement
 echo ""
-echo "Philosophy Note:"
+echo "Open Source Reflection:"
 case $PACKAGE in
-    vlc) echo "VLC: a student-built media player that proves openness can beat restrictive codecs." ;;
-    firefox) echo "Firefox: a browser built to protect an open web." ;;
-    git) echo "Git: distributed version control born from the need for freedom and speed." ;;
-    python3) echo "Python: a language shaped by readability and community contribution." ;;
-    *) echo "This package represents the spirit of open collaboration." ;;
+    vlc) echo "VLC: a community-driven media player that broke codec restrictions and made multimedia more accessible." ;;
+    firefox) echo "Firefox: a browser that represents openness and user choice on the web." ;;
+    git) echo "Git: a distributed tool that transformed collaborative software development." ;;
+    python3) echo "Python: a language shaped by readability, openness, and global contribution." ;;
+    *) echo "This package reflects the collaborative spirit of free and open-source software." ;;
 esac
