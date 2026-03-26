@@ -1,8 +1,8 @@
 # Open Source Audit - VLC Media Player
 
 ## Student Details
-- Name: Akruti Chopra
-- Roll Number: [Your Roll Number]
+- Name: Akruti Rajiv Chopra
+- Roll Number: 24BSA10197
 - Course: Open Source Software
 - Project Title: The Open Source Audit - VLC Media Player
 
