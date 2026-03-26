@@ -36,6 +36,31 @@ Reads a log file line by line, counts keyword matches, and prints the last 5 mat
 Asks three questions interactively and generates a personalized open-source philosophy statement in a text file.
 
 ## How to Run
+
 Make scripts executable:
+
 ```bash
 chmod +x *.sh
+```
+
+Run the scripts:
+
+```bash
+./vlc_system_profile.sh
+./vlc_package_audit.sh
+./storage_permission_scan.sh
+./keyword_log_tracker.sh /var/log/syslog error
+./freedom_manifesto_builder.sh
+```
+
+If `/var/log/syslog` does not exist on your Linux system, use:
+
+```bash
+./keyword_log_tracker.sh /var/log/dpkg.log error
+```
+
+## Dependencies
+- Bash shell
+- Core Linux utilities (`uname`, `whoami`, `uptime`, `ls`, `du`, `grep`, `tail`, `awk`, `cut`)
+- Package manager tools (`dpkg` or `rpm`)
+- VLC installed on the Linux system for VLC-specific checks
