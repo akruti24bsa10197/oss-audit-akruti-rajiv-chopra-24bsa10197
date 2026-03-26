@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script 2: FOSS Package Inspector
-# Author: Akruti Chopra
+# Author: Akruti Rajiv Chopra
 # Checks whether VLC is installed and prints package details
 
 PACKAGE="vlc"
